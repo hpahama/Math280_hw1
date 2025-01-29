@@ -66,4 +66,6 @@ ax.legend()
 # Show plot
 plt.show()
 ```
+Note:
+See 3D_Figure.png for reference
 
