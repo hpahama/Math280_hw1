@@ -85,4 +85,4 @@ plt.legend()
 plt.show()
 ```
 ### Step 8. Output Conclusion
-Looks like the initial guess of [0.707, 0.707] was right. This unit vector captures the maximum variation in the dataset and evenly balances the contributions between both x and y directions. With the highest total variation and confirmed by the scatterplot, this vector aligns nicely with the direction of maximum variability.
+I started with an initial guess for a unit vector [0.707, 0.707], which balances the contributions between x and y directions. This vector was normalized to a magnitude of 1. I then calculated the total variation using this vector and compared it with three other vectors. The result was clear—my initial vector [0.707, 0.707] achieved the highest total variation of 6.02, confirming it was the best choice. The scatterplot and the line spanned by this vector further substantiated that it aligns perfectly with the direction of maximum variability in the dataset.
