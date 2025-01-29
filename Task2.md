@@ -1,7 +1,7 @@
 # Applied Homework Assignment 1: A First Look at Principal Component Analysis
 
 ## TASK 2:
-Using guess and check, find a unit vector ⃗v that points in a direction close to the direction of maximum variation of your scatterplot from problem 1. Using Python, find the total variability of your dataset in the direction of ⃗v using the Python code sum(np.dot(dataset[[’variable1’,’variable2’]],vector)). Check that you’ve found a good unit vector ⃗v by trying three other unit vectors and verifying that your vector has a larger total variation. Report your findings.
+Using guess and check, find a unit vector 'v' that points in a direction close to the direction of maximum variation of your scatterplot from problem 1. Using Python, find the total variability of your dataset in the direction of ⃗v using the Python code sum(np.dot(dataset[[’variable1’,’variable2’]],vector)). Check that you’ve found a good unit vector ⃗v by trying three other unit vectors and verifying that your vector has a larger total variation. Report your findings.
 
 ### Step 1: Import Libraries and Load Data
 Start by importing the necessary libraries and reading the data from the CSV file.
@@ -64,4 +64,4 @@ Carefully compare the total variations and determine which unit vector provides 
 - Total variation for unit vector 3: 6.02
 ```
 Answer:
-My initial guess for the unit vector `v` ([0.707, 0.707]) was good, achieving the highest variation. This vector evenly splits between x and y directions, normalized to a magnitude of 1 by dividing `[1, 1]` by `√2`.
+I calculated the total variation in the direction of an initial guess unit vector [0.707, 0.707]. After comparing it against three other unit vectors, the initial guess of [0.707, 0.707] achieved the highest total variation of 6.02. This normalized vector equally splits between x and y directions, making it optimal for capturing the maximum variability in the dataset. Hence, the vector [0.707, 0.707] was the most effective in showing the direction of maximum variation.
